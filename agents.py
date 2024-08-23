@@ -9,9 +9,9 @@ from langchain_anthropic import ChatAnthropic
 class CustomAgents:
     def __init__(self):
         # self.OpenAIGPT4 = ChatOpenAI(model_name="gpt-4o", temperature=0.7)
-        # self.AnthropicLLM = ChatAnthropic(model="claude-3-sonnet-20240229", temperature=0.7)
+        self.AnthropicLLM = ChatAnthropic(model="claude-3-sonnet-20240229", temperature=0.7)
         # self.Ollama = ChatOpenAI(model_name="devainllama3", base_url = "http://localhost:11434/v1") 
-        self.GroqLLM = ChatGroq(model_name="mixtral-8x7b-32768", temperature=0.7)
+        # self.GroqLLM = ChatGroq(model_name="mixtral-8x7b-32768", temperature=0.7)
         
     def architect_agent(self, tools):
         return Agent(
